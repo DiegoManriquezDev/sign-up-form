@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: url(/img/lost-forest.jpg);
+    position: relative;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.title{
+    position: relative;
+    color: #fff;
+}
+
+.form{
+    position: relative;
+}
+
+.input-box{
+    color: #fff;
+}
+
+form .user-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .user-info .input-box{
+    width: calc(100%/2);
+    height: 50px;
+    padding: 10px 0;
+}
